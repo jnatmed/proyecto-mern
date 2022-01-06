@@ -10,13 +10,9 @@ app.set('port', process.env.PORT || 3000);
 app.use(morgan('dev')); 
 app.use(express.json());
 
-// Routes
-// app.use(require('./routes/task.routes'));
-router.get('/hola', function(res, req){
-    res.send('Hellow World');
-});
-
-app.use('/juan', router);
+// Routes    
+const task_routes = require('./routes/task.routes.js');
+app.use('/task', task_routes);
 
 // Statics files
 

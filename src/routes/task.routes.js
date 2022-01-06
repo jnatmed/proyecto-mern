@@ -1,9 +1,12 @@
 const express = require('express');
 const router = express.Router();
-// const router = require("express").Router;
 
-router.get('/',(res, req)=>{
-    res.send('Hellow World');
+router.get('/', function(req, res){
+    res.send('Hola mundo.!');
 });
 
-module.export = router;
+/**
+ * ?dio error, no exportaba porque 
+ * ?estaba escrito "export" en ves de "exports"..inedito
+ */
+module.exports = router;
