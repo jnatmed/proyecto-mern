@@ -37,6 +37,6 @@ router.delete('/:id', async (req, res) => {
 
 /**
  * ?dio error, no exportaba porque 
- * ?estaba escrito "export" en ves de "exports"..inedito
+ * ?estaba escrito "export" en vez de "exports"..inedito
  */
 module.exports = router;
